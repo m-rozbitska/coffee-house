@@ -10,18 +10,75 @@
 }
 
 .menu {
+	@media(max-width: 768px) {
+		&__icon {
+			display: block;
+			width: 44px;
+			height: 44px;
+			position: relative;
+			z-index: 5;
+			cursor: pointer;
+			transition: .2s all ease-in-out;
+			border-width: 1px;
+			border-radius: 100px;
+			border-color: $borderDark;
+			border-style: solid;
+			span {
+				position: absolute;
+				top: calc(50% - 1px);
+				left: 0;
+				width: 100%;
+				width: 16px;
+				height: 2px;
+				background-color: $textDark;
+				&:first-child {
+					top: 0;
+				}
+				&:last-child {
+					top: auto;
+					bottom: 0;
+					
+				}
+			}
+		}
+	}
+	&__body {
+		@media (max-width: 768px) {
+			position: absolute;
+			top: 0;
+			left: -100%;
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			transition: all .2s;
+			overflow: auto;
+		}
+		&.active {
+			left: 0;
+		}
+	}
 	&__list {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
 		gap: 40px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+			margin: auto;
+		}
 	}
 	&__link {
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 150%; /* 24px */
 		color: $textDark;
+		@media (max-width: 768px) {
+			display: block;
+			font-size: 32px;
+			line-height: 90px;
+		}
 	}
 }
 
@@ -30,6 +87,9 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 8px;
+	@media(max-width: 768px) {
+		display: none;
+	}
 }
 
 .assortm__title {

@@ -9,6 +9,10 @@
 	background: url(/src/images/bg-home.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	@media(max-width: 380px) {
+		padding: 60px 16px;
+		width: 100%;
+	}
 }
 
 .enjoy__content {
@@ -26,6 +30,10 @@
 	font-weight: 600;
 	line-height: 105%;
 	color: $textLight;
+	@media(max-width: 380px) {
+		font-size: 42px;
+		line-height: 115%;
+	}
 }
 
 .text__accent {
@@ -88,4 +96,31 @@
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 125%; /* 30px */
+}
+
+.about__text {
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 125%;
+}
+
+.about__box{
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.about__box-item {
+	position: relative;
+	padding: 0px 0px 85% 0px;
+}
+
+.about__box-img {
+	border-radius: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
