@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"D:\\projectPortfolio\\coffee-house\\src\\images\\bg-home.jpg":[["bg-home.3b48d655.jpg","src/images/bg-home.jpg"],"src/images/bg-home.jpg"],"_css_loader":"C:/Users/Mariia/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/Mariia/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"D:\\projectPortfolio\\coffee-house\\src\\images\\arrow-left.svg":[["arrow-left.91850358.svg","src/images/arrow-left.svg"],"src/images/arrow-left.svg"],"D:\\projectPortfolio\\coffee-house\\src\\images\\arrow-right.svg":[["arrow-right.b63a9d8d.svg","src/images/arrow-right.svg"],"src/images/arrow-right.svg"],"D:\\projectPortfolio\\coffee-house\\src\\images\\bg-home.jpg":[["bg-home.3b48d655.jpg","src/images/bg-home.jpg"],"src/images/bg-home.jpg"],"_css_loader":"C:/Users/Mariia/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/Mariia/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9636" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1924" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

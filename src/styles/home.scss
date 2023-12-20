@@ -58,10 +58,6 @@
 	background: $textLight;
 }
 
-.coffee {
-	padding-top: 100px;
-}
-
 .coffee__title {
 	text-align: center;
 	font-size: 60px;
@@ -85,17 +81,20 @@
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 125%; /* 30px */
+	color: $textDark;
 }
 
 .slider__text {
 	padding: 16px 0px;
 	line-height: 150%; /* 30px */
+	color: $textDark;
 }
 
 .slider__price {
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 125%; /* 30px */
+	color: $textDark;
 }
 
 .about__text {
