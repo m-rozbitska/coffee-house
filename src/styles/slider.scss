@@ -3,9 +3,9 @@
 	position: relative;
 }
 
-.slider__content {
-	max-width: 480px;
-}
+// .slider__content {
+// 	max-width: 480px;
+// }
 
 .coffee__slider .slick-arrow {
 	cursor: pointer;
@@ -38,4 +38,26 @@
 
 .slick-list {
 	overflow: hidden;
+}
+
+.coffee__slider .slick-dots{
+	padding-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+.coffee__slider .slick-dots li{
+	list-style: none;
+}
+// /* Активная точка */
+.coffee__slider .slick-dots li.slick-active button{
+	background-color: $borderDark;
+}
+/* Элемент точки */
+.coffee__slider .slick-dots button {
+	font-size: 0;
+	width: 40px;
+	height: 4px;
+	background-color: $borderLight;
 }

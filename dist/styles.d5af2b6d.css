@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -115,10 +116,6 @@ body {
   position: relative;
 }
 
-.slider__content {
-  max-width: 480px;
-}
-
 .coffee__slider .slick-arrow {
   cursor: pointer;
   position: absolute;
@@ -150,6 +147,30 @@ body {
 
 .slick-list {
   overflow: hidden;
+}
+
+.coffee__slider .slick-dots {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.coffee__slider .slick-dots li {
+  list-style: none;
+}
+
+.coffee__slider .slick-dots li.slick-active button {
+  background-color: #665F55;
+}
+
+/* Элемент точки */
+.coffee__slider .slick-dots button {
+  font-size: 0;
+  width: 40px;
+  height: 4px;
+  background-color: #C1B6AD;
 }
 
 .header {
@@ -258,6 +279,12 @@ body {
 
 section {
   padding-top: 100px;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
 }
 
 .enjoy {
@@ -369,6 +396,7 @@ section {
 }
 
 .about__box {
+  padding-top: 40px;
   display: grid;
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -387,6 +415,65 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+
+.app__text {
+  font-size: 16px;
+  line-height: 150%;
+  padding: 40px 0px;
+}
+
+.app__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #665F55;
+  border-radius: 100px;
+  padding: 8px 18px;
+}
+
+.btns__wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.app__accent {
+  font-size: 10px;
+  line-height: 140%;
+}
+
+.app__btn-text {
+  color: #403F3D;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.btn__avail {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.btn__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.app__name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
 }
 
 /*# sourceMappingURL=/styles.d5af2b6d.css.map */
