@@ -3,5 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
+		responsive: [
+			{
+				breakpoint: 380,
+				settings: {
+					arrows: false,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+			]
 	});
 })

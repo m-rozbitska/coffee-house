@@ -60,9 +60,6 @@
 
 .coffee__title {
 	text-align: center;
-	font-size: 60px;
-	font-weight: 600;
-	line-height: 125%;
 }
 
 .coffee__slider {
@@ -97,11 +94,36 @@
 	color: $textDark;
 }
 
-.about__text {
-	font-size: 60px;
-	font-weight: 600;
-	line-height: 125%;
+.slider__media {
+	width: 100%;
+	@media(max-width: 380px) {
+		width: 348px;
+		height: 348px;
+	}
 }
+
+@media(max-width: 768px) {
+	.about__text {
+		text-align: center;
+	}
+}
+
+// .about__box {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	gap: 40px;
+// }
+
+// .about__box-item {
+// 	width: 660px;
+// 	flex: 2;
+// }
+
+// .about__box-img {
+// 	width: 100%;
+	// height: auto;
+	// display: block;
+// }
 
 .about__box{
 	padding-top: 40px;
@@ -125,11 +147,22 @@
 	object-fit: cover;
 }
 
+.box-img {
+	width: 660px;
+	height: 430px;
+}
+
 .app__wrapper {
 	display: flex;
 	justify-content: space-between;
 	gap: 100px;
 	align-items: center;
+	@media(max-width: 768px) {
+		flex-direction: column;
+	}
+	@media(max-width: 380px) {
+		gap: 40px;
+	}
 }
 
 .app__text {
@@ -153,11 +186,23 @@
 .btns__wrapper {
 	display: flex;
 	gap: 20px;
+	@media(max-width: 380px) {
+		display: inline-flex;
+		flex-direction: column;
+	}
 }
 
 .app__accent {
 	font-size: 10px;
 	line-height: 140%;
+}
+
+.app__media-img {
+	width: 100%;
+	@media(max-width: 380px) {
+		width: 348px;
+		height: 348px;
+	}
 }
 
 .app__btn-text {
@@ -223,4 +268,77 @@
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 150%; /* 24px */
+}
+
+.footer {
+	padding-bottom: 40px;
+	@media(max-width: 380px){
+		padding-top: 100px;
+	}
+}
+
+.footer__wrapper {
+	border-radius: 40px;
+	background: $borderDark;
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+	padding: 100px;
+	@media(max-width: 768px) {
+		flex-direction: column;
+		padding: 100px 60px;
+	}
+	@media(max-width: 380px) {
+		padding: 60px 16px;
+		gap: 40px;
+	}
+}
+
+.footer__title {
+	max-width: 530px;
+}
+
+.footer__social {
+	flex-basis: 50%;
+}
+
+.social__wrapper {
+	padding-top: 40px;
+	display: flex;
+	gap: 12px;
+}
+
+.social__link {
+	border-width: 1px;
+	border-style: solid;
+	border-color: $borderLight;
+	border-radius: 100%;
+	padding: 18px;
+}
+
+.contacts__title {
+	padding-bottom: 40px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 125%; 
+	color: $textLight;
+}
+
+.contacts__wrapper {
+	flex-direction: column;
+	display: flex;
+	gap: 16px;
+}
+
+.contacts__item {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.contacts__item-text {
+	font-weight: 600;
+	line-height: 150%;
+	color: $textLight;
 }

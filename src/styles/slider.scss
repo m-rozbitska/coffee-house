@@ -25,12 +25,23 @@
 .coffee__slider .slick-arrow.slick-prev {
 	left: 0;
 	background: url(/src/images/arrow-left.svg) 0 0 no-repeat;
+	@media(max-width: 380px) {
+		opacity: 0;
+	}
 }
 
 .coffee__slider .slick-arrow.slick-next {
 	right: 0;
 	background: url(/src/images/arrow-right.svg) 0 0 no-repeat;
+	@media(max-width: 380px) {
+		opacity: 0;
+	}
 }
+
+// .coffee__slider .slick-prev,
+// .coffee__slider .slick-next {
+//   display: none; /* or opacity: 0; */
+// }
 
 .slick-track {
 	display: flex;

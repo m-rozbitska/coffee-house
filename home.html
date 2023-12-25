@@ -17,10 +17,14 @@
 					<img src="./src/images/logo.svg" alt="header logo" class="logo__img">
 				</a>
 				<div class="menu header__menu">
+					<!-- <div class="menu__icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div> -->
 					<div class="menu__icon">
-						<span></span>
-						<span></span>
-						<span></span>
+						<div class="menu__icon-line"></div>
+						<div class="menu__icon-line"></div>
 					</div>
 					<nav class="menu__body">
 						<ul class="menu__list">
@@ -62,7 +66,7 @@
 		</section>
 		<section class="coffee">
 			<div class="container">
-				<h2 class="coffee__title title">Choose your <span class="text__accent">favorite</span> coffee</h2>
+				<h2 class="title coffee__title">Choose your <span class="text__accent">favorite</span> coffee</h2>
 				<div class="coffee__slider slider">
 					<div class="slider__item">
 						<a href="#" class="slider__item-link">
@@ -111,10 +115,10 @@
 						<img src="./src/images/about-1.jpg" class="about__box-img" alt="">
 					</div>
 					<div class="about__box-item">
-						<img src="./src/images/about-3.jpg" class="about__box-img" alt="">
+						<img src="./src/images/about-3.jpg" class="about__box-img box-img" alt="">
 					</div>
 					<div class="about__box-item">
-						<img src="./src/images/about-2.jpg" class="about__box-img" alt="">
+						<img src="./src/images/about-2.jpg" class="about__box-img box-img" alt="">
 					</div>
 					<div class="about__box-item">
 						<img src="./src/images/about-4.jpg" class="about__box-img" alt="">
@@ -164,38 +168,48 @@
 					</div>
 					</div>
 					<div class="app__media">
-						<img src="./src/images/mobile-screens.png" alt="">
+						<img class="app__media-img" src="./src/images/mobile-screens.png" alt="">
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="app">
+		<footer class="footer">
 			<div class="container">
-				<h2 class="title app__title"> <span class="text__accent">Download</span> our apps to start ordering</h2>
-				<p class="app__decr">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-				<div class="app__wrapper">
-					<div class="app__media">
-						<a class="app__icon">
-							<img src="./src/images/icon-apple.svg" alt="">
-							<div class="app__descr">
-								<p class="app__text">Available on the</p>
-								<p class="app__name">App store</p>
-							</div>
-						</a>
-						<a class="app__icon">
-							<img src="./src/images/play.svg" alt="">
-							<div class="app__descr">
-								<p class="app__text">Available on the</p>
-								<p class="app__name">Google Play</p>
-							</div>
-						</a>
+				<div class="footer__wrapper">
+					<div class="footer__social">
+						<h2 class=" title footer__title">Sip, Savor, Smile.<span class="text__accent"> It’s coffee time!</span></h2>
+						<div class="social__wrapper">
+							<a href="#" class="social__link">
+								<img src="./src/images/twitter.svg" alt="" class="social__img">
+							</a>
+							<a href="#" class="social__link">
+								<img src="./src/images/insta-footer.svg" alt="" class="social__img">
+							</a>
+							<a href="#" class="social__link">
+								<img src="./src/images/facebook.svg" alt="" class="social__img">
+							</a>
+						</div>
 					</div>
-					<div class="app__img">
-						<img src="./src/images/mobile-screens.png" alt="">
+					<div class="footer__contacts">
+						<h3 class="contacts__title">Contact us</h3>
+						<div class="contacts__wrapper">
+							<div class="contacts__item">
+								<img src="./src/images/pin-alt.svg" alt="">
+								<a href="#" class="contacts__item-text">8558 Green Rd.,  LA</p>
+							</div>
+							<div class="contacts__item">
+								<img src="./src/images/phone.svg" alt="">
+								<a href="tel:+1 (603) 555-0123" class="contacts__item-text">+1 (603) 555-0123</a>
+							</div>
+							<div class="contacts__item">
+								<img src="./src/images/clock.svg" alt="">
+								<p class="contacts__item-text">Mon-Sat: 9:00 AM – 23:00 PM</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</footer>
 	</main>
 	<script type="module" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	<script src="./src/slick.min.js"></script>
